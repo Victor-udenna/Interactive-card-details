@@ -1,0 +1,84 @@
+// Variables used across page
+// VARIABLES\
+$font-size: 18px;
+// color
+$white-color: hsl(0, 0%, 100%);
+$primary-color: hsl(278, 68%, 11%);
+$secondary-color: hsl(270, 3%, 87%);
+$secondary-color2: hsl(279, 6%, 55%);
+$red: #ff0000;
+// Border
+$border-radius: 10px;
+//
+
+//
+// card-size
+$card-SM: 300px;
+$card-MD: 350px;
+$card-LG: 400px;
+//
+// Positioning
+$_relative: relative;
+$_absolute: absolute;
+//
+// index
+$z-index1: 1;
+$z-index0: 0;
+//  Break point
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1240px;
+//
+// Width and height
+$width100: 100%;
+$width50: 50%;
+$width40: 40%;
+//
+$height100: 100%;
+$height100: 100vh;
+$height40: 40%;
+// font size
+$fs: 0.5rem; //9px
+$fs-sm: 0.75rem; // 13px
+$fs-1: 1rem; //18px
+$fs-label: 0.8rem;
+$fs-2: 1.5rem; //27px
+$fs-3: 1.8rem; // 32.4px
+$fs-4: 2rem; //36px
+$fs-4a: 2.16rem; //40.5px
+$fs-5: 2.5rem; //45px
+$fs-6: 3rem; //54px
+$fs-7: 3.5rem; // 63px
+$fs-8: 4rem; // 72px
+$fs-9: 4.5rem; // 81px
+
+// margin
+// margin size
+$mzero: 0px;
+$ms: 0.5rem; //9px
+$ms-1: 1rem; //18px
+$ms-2: 1.5rem; //27px
+$ms-3: 1.75rem; // 31.5px
+$ms-4: 2rem; //36px
+$ms-5: 2.5rem; //45px
+$ms-6: 3rem; //54px
+$ms-7: 3.5rem; // 63px
+$ms-8: 4rem; // 72px
+$ms-9: 4.5rem; // 81px
+$m-auto: auto; // auto
+// padding
+$p-0: 0;
+$ps: 0.5rem; //9px
+$ps-a: 0.75rem; //13px
+$ps-1: 1rem; //18px
+$ps-2: 1.5rem; //27px
+$ps-3: 1.75rem; // 31.5px
+$ps-4: 2rem; //36px
+$ps-5: 2.5rem; //45px
+$ps-6: 3rem; //54px
+$ps-7: 3.5rem; // 63px
+$ps-8: 4rem; // 72px
+$ps-9: 4.5rem; // 81px
+/////////
+// FONT WEIGHT
+$font-weight: 500;
+$font-weightb: 600;

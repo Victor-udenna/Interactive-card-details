@@ -1,0 +1,43 @@
+// Styles the layout of the page
+/////////
+
+body {
+  padding: $p-0;
+  margin: $mzero;
+  font-size: $font-size;
+}
+
+.primary-text{
+  font-size: 13px;
+  color: $white-color;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+  // TABLET STYLE
+
+  // @media (min-width: $breakpoint-tablet) {
+
+  // }
+
+// // DESKTOP STYLE
+
+
+  @media (min-width: $breakpoint-desktop) {
+
+    .main{
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      align-items: center;
+      justify-content: space-between;
+
+      .form_container{
+       justify-self: start;
+           }
+    }
+
+  }

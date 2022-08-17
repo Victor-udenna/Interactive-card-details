@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <main class="main">
+    <header class="header">
+
+      <div class="card-back-container">
+        <img src="./images/bg-card-back.png" alt="" class="card">
+       <div class="back_card-text">
+        <p class="cvc-number primary-text">000</p>
+       </div>
+      </div>
+  
+      <div class="card-front-container">
+        <img src="./images/bg-card-front.png" alt="" class="card">
+        <div class="front_card-text">
+        <p>  <span class="circle1"></span>
+          <span class="circle2"></span></p>
+        <p class="card-number">0000 0000 0000 0000</p>
+        <div class="card-subdetails">
+        <p class="name primary-text">JANE APPELESED</p>
+        <P class="exp-date primary-text"><span class="month">00</span>/<span class="year">00</span></P>
+        </div>
+        </div>
+        </div>
+        
+  
+    </header>
+
+
+<section class="section form_container">
+  <form action="">
+    <div class="input-container">
+<label for="card-holder" class="label">CARD HOLDER</label>
+<input type="text" id="card-holder" placeholder="e.g. Jane Appleseed">
+    </div>
+
+    <div class="input-container">
+<label for="card-number" class="label">CARD NUMBER</label>
+<input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000">
+<p>Wrong format, numbers only</p>
+    </div>
+
+<div class="sub-container">
+
+<div class="label-container">
+  <label for="date_label" class="label">EXP. DATE (MM/YY)</label>
+  <div class="date_container">
+    <input type="text" placeholder="MM" id="date_label">
+  <input type="text" placeholder="YY">
+  </div>
+  <p> Can't be blank </p>
+</div>
+
+<div class="input-container cvc_container">
+  <label for="cvc" class="label">CVC</label>
+  <input type="text" id="cvc" placeholder="e.g 123">
+  <p>Can't be blank</p>
+</div>
+
+</div>
+
+<div class="input-container">
+  <button class="button">Confirm</button>
+</div>
+</form>
+  </section>
+  </main>
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  
+
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+</body>
+</html>    
