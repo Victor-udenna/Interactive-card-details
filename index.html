@@ -30,7 +30,7 @@
         <p class="card-number">0000 0000 0000 0000</p>
         <div class="card-subdetails">
         <p class="name primary-text">JANE APPELESED</p>
-        <P class="exp-date primary-text"><span class="month">00</span>/<span class="year">00</span></P>
+        <P class="exp-date primary-text"><span class="month-card">00</span>/<span class="year-card">00</span></P>
         </div>
         </div>
         </div>
@@ -48,8 +48,8 @@
 
     <div class="input-container">
 <label for="card-number" class="label">CARD NUMBER</label>
-<input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000">
-<p>Wrong format, numbers only</p>
+<input type="text" id="card-number" class="card-holder" placeholder="e.g. 1234 5678 9123 0000">
+<p class="Error_text">Wrong format, numbers only</p>
     </div>
 
 <div class="sub-container">
@@ -57,34 +57,47 @@
 <div class="label-container">
   <label for="date_label" class="label">EXP. DATE (MM/YY)</label>
   <div class="date_container">
-    <input type="text" placeholder="MM" id="date_label">
-  <input type="text" placeholder="YY">
+    <input type="text" placeholder="MM" id="date_label" class="moNth">
+  <input type="text" placeholder="YY" id="" class="yeaR">
   </div>
-  <p> Can't be blank </p>
+  <p class="Error_text"> Can't be blank </p>
 </div>
 
 <div class="input-container cvc_container">
   <label for="cvc" class="label">CVC</label>
-  <input type="text" id="cvc" placeholder="e.g 123">
-  <p>Can't be blank</p>
+  <input type="text" id="cvc" placeholder="e.g 123" class="cvc">
+  <p class="Error_text">Can't be blank</p>
 </div>
 
 </div>
 
 <div class="input-container">
-  <button class="button">Confirm</button>
+  <button class="button" id="add-card" type="submit">Confirm</button>
 </div>
 </form>
+  </section>
+
+  
+
+  <section class="Thankyou_message">
+<div class="icon_container">
+  <div class="image_container">
+    <img src="./images/check-lg.svg" alt="">
+  </div>
+</div>
+<h1>Thank you!</h1>
+<p> We've added your card details</p>
+<button class="primary_btn"> Continue</button>
   </section>
   </main>
 
   <!-- Completed state start -->
 
   <!-- Thank you!
-  We've added your card details
+ 
   Continue -->
   
-
+<script src="./js/main.js"></script>
 
     <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

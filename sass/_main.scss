@@ -8,20 +8,44 @@ body {
 }
 
 .primary-text{
-  font-size: 13px;
+  font-size: $fs-sm;
   color: $white-color;
+}
+
+.name{
+  font-size: $fs-sm;
 }
 
 .main{
   display: flex;
   flex-direction: column;
+  height: $height100;
+}
+
+.primary_btn{
+  background-color: $primary-color;
+  padding: $ps-a $ps;
+  border-radius: 6px;
+  border: none;
+  margin: $ms-2 0;
+  color: $white-color;
+  background-color: $primary-color;
+  width: 300px;
+  cursor: pointer;
+}
+
+
+button:focus{
+  outline: none;
 }
 
   // TABLET STYLE
 
-  // @media (min-width: $breakpoint-tablet) {
-
-  // }
+  @media (min-width: $breakpoint-tablet) {
+ .name, .primary-text{
+  font-size: $fs-1;
+ }
+  }
 
 // // DESKTOP STYLE
 
@@ -38,6 +62,10 @@ body {
       .form_container{
        justify-self: start;
            }
+    }
+
+    .name, .primary-text {
+    font-size: $fs-1;
     }
 
   }

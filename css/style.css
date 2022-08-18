@@ -4,13 +4,34 @@ body {
   font-size: 18px; }
 
 .primary-text {
-  font-size: 13px;
+  font-size: 0.75rem;
   color: white; }
+
+.name {
+  font-size: 0.75rem; }
 
 .main {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  height: 100vh; }
 
+.primary_btn {
+  background-color: #21092f;
+  padding: 0.75rem 0.5rem;
+  border-radius: 6px;
+  border: none;
+  margin: 1.5rem 0;
+  color: white;
+  background-color: #21092f;
+  width: 300px;
+  cursor: pointer; }
+
+button:focus {
+  outline: none; }
+
+@media (min-width: 768px) {
+  .name, .primary-text {
+    font-size: 1rem; } }
 @media (min-width: 1240px) {
   .main {
     display: flex;
@@ -19,7 +40,10 @@ body {
     align-items: center;
     justify-content: space-between; }
     .main .form_container {
-      justify-self: start; } }
+      justify-self: start; }
+
+  .name, .primary-text {
+    font-size: 1rem; } }
 body {
   padding: 0;
   margin: 0px;
@@ -28,12 +52,12 @@ body {
 .header {
   background: url(../images/bg-main-mobile.png) no-repeat center center/cover;
   width: 100%;
-  height: 35vh;
+  height: 25vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 1.5rem;
+  padding-top: 3.5rem;
   margin-bottom: 1.5rem; }
 
 .card-front-container, .card-back-container {
@@ -107,7 +131,7 @@ body {
     top: 5px;
     bottom: 0px;
     padding: 1rem 1.75rem 1rem 2rem;
-    color: #dedddf; }
+    color: white; }
     .front_card-text .card-number {
       font-size: 2rem; } }
 @media (min-width: 1240px) {
@@ -118,14 +142,30 @@ body {
     flex-direction: column-reverse;
     margin-bottom: 0px; }
 
+  .card {
+    width: 400px; }
+
   .card-front-container, .card-back-container {
     margin: 10px 10px 10px 10px; }
 
   .card-front-container {
-    left: 150px; }
+    left: 40%; }
 
   .card-back-container {
-    left: 230px; } }
+    left: 60%; }
+
+  .back_card-text {
+    top: 40%;
+    left: 330px; }
+
+  .front_card-text {
+    top: 5px;
+    bottom: 0px;
+    left: 45px;
+    padding: 0; }
+    .front_card-text .card-number {
+      font-size: 2.16rem;
+      margin-top: 3rem; } }
 .input-container {
   display: flex;
   flex-direction: column; }
@@ -133,36 +173,40 @@ body {
 ::placeholder {
   color: #dedddf; }
 
-.form_container {
+.form_container, .Thankyou_message {
   margin-top: 2rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
-  .form_container .label, .form_container button {
+  justify-content: space-between;
+  align-items: center; }
+  .form_container .label, .form_container button, .Thankyou_message .label, .Thankyou_message button {
     font-weight: 600; }
-  .form_container .label {
+  .form_container .label, .Thankyou_message .label {
     font-size: 0.75rem;
     cursor: pointer;
     color: #21092f;
     margin: 1rem 0 0.5rem 0; }
-  .form_container input, .form_container button {
-    padding: 0.75rem 0.5rem;
+  .form_container input, .form_container .button, .Thankyou_message input, .Thankyou_message .button {
     border-radius: 6px; }
-  .form_container input {
+  .form_container input, .Thankyou_message input {
+    padding: 0.75rem 0.5rem; }
+  .form_container input, .Thankyou_message input {
     border: 1px solid #dedddf;
     color: #21092f;
     font-size: 1rem; }
-  .form_container p {
+  .form_container .Error_text, .Thankyou_message .Error_text {
     color: #ff0000;
     font-size: 0.75rem;
     visibility: hidden; }
-  .form_container .button {
+  .form_container .button, .Thankyou_message .button {
     border: none;
     margin: 1.5rem 0;
     color: white;
-    background-color: #21092f; }
-  .form_container input:focus {
+    background-color: #21092f;
+    padding: 1.24rem;
+    cursor: pointer; }
+  .form_container input:focus, .Thankyou_message input:focus {
     border: 1.3px solid #21092f;
     outline: none; }
 
@@ -198,5 +242,21 @@ body {
   .form_container {
     width: 400px;
     margin-left: 30%; } }
+.Thankyou_message {
+  display: none; }
+  .Thankyou_message .image_container {
+    width: 80px;
+    height: 80px;
+    background-color: #21092f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; }
+  .Thankyou_message p {
+    color: #8e8593; }
+
+@media screen and (min-width: 1240px) {
+  .Thankyou_message {
+    margin-right: 20%; } }
 
 /*# sourceMappingURL=style.css.map */

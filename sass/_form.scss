@@ -11,12 +11,13 @@
     color: $secondary-color;
 }
 
-.form_container{
+.form_container, .Thankyou_message{
     margin-top: $ms-4;
     padding: $ps-1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
     .label, button{
         font-weight: $font-weightb;
@@ -29,9 +30,12 @@
         margin: $ms-1 0 $ms 0 ;
     }
 
-    input, button{
-        padding: $ps-a $ps;
+    input, .button{
         border-radius: 6px;
+    }
+
+    input{
+        padding: $ps-a $ps;
        }
 
        input{
@@ -40,7 +44,7 @@
         font-size: $fs-1;
        }
 
-    p{
+    .Error_text{
         color: $red;
         font-size: $fs-sm;
         visibility: hidden;
@@ -58,12 +62,17 @@
         margin: $ms-2 0;
         color: $white-color;
         background-color: $primary-color;
+        padding: $ps-1a;
+        cursor: pointer;
+
        }
 
        input:focus{
         border: 1.3px solid $primary-color;
         outline: none;
        }
+
+    
 }
 
 .sub-container{
@@ -113,4 +122,6 @@
         width: 400px;
         margin-left: 30%;
      }
+
+
 }
