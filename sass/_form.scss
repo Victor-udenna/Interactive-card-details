@@ -44,13 +44,6 @@
         font-size: $fs-1;
        }
 
-    .Error_text{
-        color: $red;
-        font-size: $fs-sm;
-        visibility: hidden;
-
-    }
-
     // .active{
     // }
 
@@ -75,6 +68,13 @@
     
 }
 
+.Error_text{
+    color: $red;
+    font-size: $fs;
+    visibility: hidden;
+
+}
+
 .sub-container{
     display: flex;
     justify-content: space-between;
@@ -90,7 +90,7 @@
     width: 90%;
 }
 
-.date_container{
+.date_container, .error-message-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -111,8 +111,12 @@
 
     .form_container{
         width: $width50;
-        margin: $m-auto;
+        margin: $ms-5 $m-auto $m-auto $m-auto;
         max-width: 500px;
+    }
+
+    .Error_text{
+        font-size: $fs-sm;
     }
 }
 
@@ -120,7 +124,7 @@
 
      .form_container{
         width: 400px;
-        margin-left: 30%;
+        margin: $m-auto $m-auto $m-auto 30%;
      }
 
 

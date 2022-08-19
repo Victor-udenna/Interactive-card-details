@@ -28,11 +28,13 @@ body {
   
   .card-back-container{
     align-self: flex-end;
+    margin-right: 1rem;
   }
   
   .card-front-container{
   z-index: $z-index1;
   margin-top: -75px;
+  margin-left: 1rem;
   }
   
   .card{

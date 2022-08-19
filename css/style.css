@@ -64,11 +64,13 @@ body {
   position: relative; }
 
 .card-back-container {
-  align-self: flex-end; }
+  align-self: flex-end;
+  margin-right: 1rem; }
 
 .card-front-container {
   z-index: 1;
-  margin-top: -75px; }
+  margin-top: -75px;
+  margin-left: 1rem; }
 
 .card {
   width: 300px; }
@@ -195,10 +197,6 @@ body {
     border: 1px solid #dedddf;
     color: #21092f;
     font-size: 1rem; }
-  .form_container .Error_text, .Thankyou_message .Error_text {
-    color: #ff0000;
-    font-size: 0.75rem;
-    visibility: hidden; }
   .form_container .button, .Thankyou_message .button {
     border: none;
     margin: 1.5rem 0;
@@ -209,6 +207,11 @@ body {
   .form_container input:focus, .Thankyou_message input:focus {
     border: 1.3px solid #21092f;
     outline: none; }
+
+.Error_text {
+  color: #ff0000;
+  font-size: 0.5rem;
+  visibility: hidden; }
 
 .sub-container {
   display: flex;
@@ -221,11 +224,11 @@ body {
 .cvc_container {
   width: 90%; }
 
-.date_container {
+.date_container, .error-message-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .date_container :nth-child(1), .date_container :nth-child(2) {
+  .date_container :nth-child(1), .date_container :nth-child(2), .error-message-container :nth-child(1), .error-message-container :nth-child(2) {
     width: 50%;
     flex-grow: 2;
     margin-right: 0.5rem; }
@@ -236,12 +239,15 @@ body {
 
   .form_container {
     width: 50%;
-    margin: auto;
-    max-width: 500px; } }
+    margin: 2.5rem auto auto auto;
+    max-width: 500px; }
+
+  .Error_text {
+    font-size: 0.75rem; } }
 @media screen and (min-width: 1240px) {
   .form_container {
     width: 400px;
-    margin-left: 30%; } }
+    margin: auto auto auto 30%; } }
 .Thankyou_message {
   display: none; }
   .Thankyou_message .image_container {

@@ -49,7 +49,7 @@
     <div class="input-container">
 <label for="card-number" class="label">CARD NUMBER</label>
 <input type="text" id="card-number" class="card-holder" placeholder="e.g. 1234 5678 9123 0000">
-<p class="Error_text">Wrong format, numbers only</p>
+<p class="Error_text error1">Wrong format, numbers only</p>
     </div>
 
 <div class="sub-container">
@@ -57,22 +57,26 @@
 <div class="label-container">
   <label for="date_label" class="label">EXP. DATE (MM/YY)</label>
   <div class="date_container">
-    <input type="text" placeholder="MM" id="date_label" class="moNth">
-  <input type="text" placeholder="YY" id="" class="yeaR">
+    <input type="text" placeholder="MM" id="date_label" class="month">
+  <input type="text" placeholder="YY" id="" class="year">
   </div>
-  <p class="Error_text"> Can't be blank </p>
+<div class="error-message-container">
+  <p class="Error_text error2"> Can't be blank </p>
+  <p class="Error_text error3"> Can't be blank </p>
+</div>
+  <!-- <p class="Error">Can't be blank</p> -->
 </div>
 
 <div class="input-container cvc_container">
   <label for="cvc" class="label">CVC</label>
-  <input type="text" id="cvc" placeholder="e.g 123" class="cvc">
-  <p class="Error_text">Can't be blank</p>
+  <input type="tel" id="cvc" placeholder="e.g 123" class="cvc">
+  <p class="Error_text error4">Can't be blank</p>
 </div>
 
 </div>
 
 <div class="input-container">
-  <button class="button" id="add-card" type="submit">Confirm</button>
+  <button class="button" id="add-card" type="button">Confirm</button>
 </div>
 </form>
   </section>
