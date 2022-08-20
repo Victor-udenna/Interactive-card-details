@@ -95,7 +95,7 @@ body {
 .front_card-text {
   top: 0px;
   bottom: 5px;
-  padding: 0.5rem 1.5rem;
+  left: 1.16rem;
   color: white; }
   .front_card-text p {
     margin-bottom: 0.5rem; }
@@ -132,7 +132,7 @@ body {
   .front_card-text {
     top: 5px;
     bottom: 0px;
-    padding: 1rem 1.75rem 1rem 2rem;
+    left: 1.78rem;
     color: white; }
     .front_card-text .card-number {
       font-size: 2rem; } }
@@ -216,7 +216,7 @@ body {
 .sub-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; }
+  align-items: center; }
   .sub-container .label-container {
     display: flex;
     flex-direction: column; }
