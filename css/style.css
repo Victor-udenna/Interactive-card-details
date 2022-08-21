@@ -176,8 +176,10 @@ body {
 ::placeholder {
   color: #dedddf; }
 
+.form_container {
+  margin-top: 2rem; }
+
 .form_container, .Thankyou_message {
-  margin-top: 2rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -186,7 +188,7 @@ body {
   .form_container .label, .form_container button, .Thankyou_message .label, .Thankyou_message button {
     font-weight: 600; }
   .form_container .label, .Thankyou_message .label {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     cursor: pointer;
     color: #21092f;
     margin: 1rem 0 0.5rem 0; }
@@ -195,7 +197,7 @@ body {
   .form_container input, .Thankyou_message input {
     padding: 0.75rem 0.5rem; }
   .form_container input, .Thankyou_message input {
-    border: 1px solid #dedddf;
+    border: 2px solid #dedddf;
     color: #21092f;
     font-size: 1rem; }
   .form_container .button, .Thankyou_message .button {
@@ -235,13 +237,12 @@ body {
     margin-right: 0.5rem; }
 
 @media screen and (min-width: 768px) {
-  label {
-    color: white; }
-
   .form_container {
     width: 50%;
     margin: 2.5rem auto auto auto;
     max-width: 500px; }
+    .form_container .label {
+      font-size: 0.75rem; }
 
   .Error_text {
     font-size: 0.75rem; } }
@@ -250,6 +251,7 @@ body {
     width: 400px;
     margin: auto auto auto 30%; } }
 .Thankyou_message {
+  margin-top: 3.5rem;
   display: none; }
   .Thankyou_message .image_container {
     width: 80px;
@@ -264,6 +266,6 @@ body {
 
 @media screen and (min-width: 1240px) {
   .Thankyou_message {
-    margin-right: 20%; } }
+    margin-right: 13%; } }
 
 /*# sourceMappingURL=style.css.map */

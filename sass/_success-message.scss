@@ -1,5 +1,5 @@
 .Thankyou_message{
-
+    margin-top: $ms-7;
     display: none;
     .image_container{
         width: 80px;
@@ -19,6 +19,6 @@
 
 @media screen and(min-width: $breakpoint-desktop){
     .Thankyou_message{
-        margin-right: 20%;
+        margin-right: 13%;
      }
 }

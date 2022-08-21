@@ -11,8 +11,13 @@
     color: $secondary-color;
 }
 
-.form_container, .Thankyou_message{
+
+.form_container{
     margin-top: $ms-4;
+}
+
+.form_container, .Thankyou_message{
+ 
     padding: $ps-1;
     display: flex;
     flex-direction: column;
@@ -24,7 +29,7 @@
     }
 
     .label{
-        font-size: $fs-sm;
+        font-size: $fs-sma;
         cursor: pointer;
         color: $primary-color;
         margin: $ms-1 0 $ms 0 ;
@@ -39,7 +44,7 @@
        }
 
        input{
-        border: 1px solid $secondary-color;
+        border: 2px solid $secondary-color;
         color: $primary-color;
         font-size: $fs-1;
        }
@@ -105,14 +110,16 @@
 
 
 @media screen and (min-width: $breakpoint-tablet) {
-    label {
-        color: $white-color;
-    }
+
 
     .form_container{
         width: $width50;
         margin: $ms-5 $m-auto $m-auto $m-auto;
         max-width: 500px;
+
+        .label{
+            font-size: $fs-sm;
+        }
     }
 
     .Error_text{
