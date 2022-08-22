@@ -83,7 +83,7 @@
 .sub-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
     .label-container{
         display: flex;
@@ -92,7 +92,7 @@
 }
 
 .cvc_container{
-    width: 90%;
+    width: 50%;
 }
 
 .date_container, .error-message-container{

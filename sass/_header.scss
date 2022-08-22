@@ -59,6 +59,8 @@ body {
   .front_card-text{
     top: 0px;
     bottom: 5px;
+    padding-left: $ps;
+    padding-right: $ps;
     // left: 1.16rem;
     color: $white-color;
     p{

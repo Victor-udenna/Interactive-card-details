@@ -96,6 +96,8 @@ body {
 .front_card-text {
   top: 0px;
   bottom: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: white; }
   .front_card-text p {
     margin-bottom: 0.5rem; }
@@ -219,13 +221,13 @@ body {
 .sub-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: flex-end; }
   .sub-container .label-container {
     display: flex;
     flex-direction: column; }
 
 .cvc_container {
-  width: 90%; }
+  width: 50%; }
 
 .date_container, .error-message-container {
   display: flex;
