@@ -56,6 +56,12 @@ body {
     position: absolute;
   }
   
+  // @-moz-document url-prefix() {
+  //   .front_card-text{
+  //     color: $p;
+  //   }
+  // }
+
   .front_card-text{
     top: 0px;
     bottom: 5px;
@@ -116,7 +122,7 @@ body {
     .front_card-text{
       top: 5px;
       bottom: 0px;
-      left: 1.78rem;
+      left: .75rem;
       // padding: $ps-1 $ps-3 $ps-1 $ps-4;
       color: $white-color;
       
@@ -163,13 +169,14 @@ body {
     .front_card-text{
       top: 5px;
       bottom: 0px;
-      left: 45px;
-      padding: 0;
-      // padding: $ps-1 $ps-1 $ps-1 $ps-2;
+      left: 39px;
+      padding:  0;
+      // padding: $ps $ps-1 $ps $ps-1;
       
       .card-number{
-        font-size: $fs-4a;
+        font-size: $fs-4;
         margin-top: $ms-6;
+        padding: $p-0;
       }
 
     }

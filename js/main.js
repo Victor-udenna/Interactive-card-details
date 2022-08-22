@@ -37,7 +37,7 @@ const inputName = () => {
         card_holder_input.style.borderColor = "#dedddf";
         ERROR_1.style.visibility = "hidden";
     } else {
-        card_holder_card.innerText = "JANE APPELESED";
+        card_holder_card.innerText = "XXXX  XXXXXXX";
         card_holder_input.style.borderColor = "red";
         ERROR_1.style.visibility = "visible";
     }
@@ -52,7 +52,7 @@ const inputNumber = () => {
         ERROR_2A.style.visibility = "hidden";
         // ERROR_2.style.visibility = "hidden";
     } else  {
-        card_number_card.innerText = "0000 0000 0000 0000";
+        card_number_card.innerText = "xxxx xxxx xxxx xxxx";
         ERROR_2A.style.visibility = "visible";
         // ERROR_2.style.visibility = "hidden";
         card_number_input.style.borderColor = "red";
@@ -69,7 +69,7 @@ const InputMonth = () => {
         ERROR_3.style.visibility = "hidden";
     } else {
         expMonth_input.style.borderColor = "red";
-        expMonth_card.innerText = "00";
+        expMonth_card.innerText = "xx";
         ERROR_3.style.visibility = "visible";
     }
 }
@@ -82,7 +82,7 @@ const InputYear = () => {
         ERROR_4.style.visibility = "hidden";
     } else {
         expYear_input.style.borderColor = "red";
-        expYear_card.innerText = "00";
+        expYear_card.innerText = "xx";
         ERROR_4.style.visibility = "visible";
     }
 }
@@ -96,7 +96,7 @@ const Inputcvc = () => {
         ERROR_5.style.visibility = "hidden";
     } else {
         cvc_input.style.borderColor = "red";
-        cvc_card.innerText = "000";
+        cvc_card.innerText = "xxx";
         ERROR_5.style.visibility = "visible";
     }
 }

@@ -59,6 +59,7 @@ button:focus{
       height: 100vh;
       align-items: center;
       justify-content: space-between;
+      overflow: $no_scroll;
 
       .form_container{
        justify-self: start;
