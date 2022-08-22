@@ -9,8 +9,7 @@ body {
     width: 100%;
     height: 25vh;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     justify-content: center;
     padding-top: $ps-7;
     margin-bottom: $ms-2;
@@ -82,7 +81,7 @@ body {
     }
   
     .card-subdetails{
-      display: flex;
+      @include flex_row;
       justify-content: space-between;
       align-items: center;
     }
@@ -102,7 +101,7 @@ body {
 @media (min-width: $breakpoint-tablet) {
   
     .header{
-      flex-direction: row-reverse;
+      @include flex_row_reverse;
     }
 
     .card{
@@ -123,7 +122,6 @@ body {
       top: 5px;
       bottom: 0px;
       left: .75rem;
-      // padding: $ps-1 $ps-3 $ps-1 $ps-4;
       color: $white-color;
       
       .card-number{
@@ -140,7 +138,7 @@ body {
       background: url(../images/bg-main-mobile.png) no-repeat center center/ cover;
       height: 100vh;
       width: 30vw;
-      flex-direction: column-reverse;
+      @include flex_column_reverse;
       margin-bottom: $mzero;
     }
 
@@ -171,7 +169,6 @@ body {
       bottom: 0px;
       left: 39px;
       padding:  0;
-      // padding: $ps $ps-1 $ps $ps-1;
       
       .card-number{
         font-size: $fs-4;

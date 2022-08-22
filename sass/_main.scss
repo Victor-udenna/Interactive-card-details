@@ -18,8 +18,7 @@ body {
 }
 
 .main{
-  display: flex;
-  flex-direction: column;
+@include flex_column;
   height: $height100;
 }
 
@@ -54,8 +53,9 @@ button:focus{
   @media (min-width: $breakpoint-desktop) {
 
     .main{
-      display: flex;
-      flex-direction: row;
+      // display: flex;
+      // flex-direction: row;
+      @include flex_row;
       height: 100vh;
       align-items: center;
       justify-content: space-between;
