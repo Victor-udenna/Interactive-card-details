@@ -66,7 +66,7 @@ body { padding: 0; margin: 0px; font-size: 18px; }
 .form_container .label, .form_container button, .Thankyou_message .label, .Thankyou_message button { font-weight: 600; }
 .form_container .label, .Thankyou_message .label { font-size: 0.65rem; cursor: pointer; color: #21092f; margin: 1rem 0 0.5rem 0; }
 .form_container input, .form_container .button, .Thankyou_message input, .Thankyou_message .button { border-radius: 6px; }
-.form_container input, .Thankyou_message input { padding: 0.75rem 0.5rem; }
+.form_container input, .Thankyou_message input { padding: 1rem 0.75rem; }
 .form_container input, .Thankyou_message input { border: 2px solid #dedddf; color: #21092f; font-size: 1rem; }
 .form_container .button, .Thankyou_message .button { border: none; margin: 1.5rem 0; color: white; background-color: #21092f; padding: 1.24rem; cursor: pointer; }
 .form_container input:focus, .Thankyou_message input:focus { border: 1.3px solid #21092f; outline: none; }
@@ -79,14 +79,14 @@ body { padding: 0; margin: 0px; font-size: 18px; }
 .cvc_container { width: 50%; }
 
 .date_container, .error-message-container { display: flex; flex-direction: row; justify-content: space-between; }
-.date_container :nth-child(1), .date_container :nth-child(2), .error-message-container :nth-child(1), .error-message-container :nth-child(2) { width: 50%; flex-grow: 2; margin-right: 0.5rem; }
+.date_container :nth-child(1), .date_container :nth-child(2), .error-message-container :nth-child(1), .error-message-container :nth-child(2) { width: 50%; flex-grow: 2; margin-right: 0.25rem; }
 
 @media screen and (min-width: 768px) { .form_container { width: 50%; margin: 2.5rem auto auto auto; max-width: 500px; }
   .form_container .label { font-size: 0.75rem; }
   .Error_text { font-size: 0.75rem; } }
 @media screen and (min-width: 1240px) { .form_container { width: 400px; margin: auto auto auto 30%; } }
 .Thankyou_message { margin-top: 3.5rem; display: none; }
-.Thankyou_message .image_container { width: 80px; height: 80px; background-color: #21092f; display: flex; flex-direction: row; align-items: center; justify-content: center; border-radius: 50%; }
+.Thankyou_message .image_container { width: 80px; height: 80px; background: linear-gradient(135deg, #6448fe 15%, #600594 50%); display: flex; flex-direction: row; align-items: center; justify-content: center; border-radius: 50%; }
 .Thankyou_message p { color: #8e8593; }
 
 @media screen and (min-width: 1240px) { .Thankyou_message { margin-right: 13%; } }

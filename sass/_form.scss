@@ -40,7 +40,7 @@
     }
 
     input{
-        padding: $ps-a $ps;
+        padding: $ps-1 $ps-a;
        }
 
        input{
@@ -103,7 +103,7 @@
     :nth-child(1), :nth-child(2){
         width: 50%;
         flex-grow: 2;
-        margin-right: $ms;
+        margin-right: $ms-xs;
     }
 }
 
@@ -133,6 +133,5 @@
         width: 400px;
         margin: $m-auto $m-auto $m-auto 30%;
      }
-
 
 }
