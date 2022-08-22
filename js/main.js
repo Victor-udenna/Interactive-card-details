@@ -37,7 +37,7 @@ const inputName = () => {
         card_holder_input.style.borderColor = "#dedddf";
         ERROR_1.style.visibility = "hidden";
     } else {
-        card_holder_card.innerText = "Jane Appleseed";
+        card_holder_card.innerText = "JANE APPELESED";
         card_holder_input.style.borderColor = "red";
         ERROR_1.style.visibility = "visible";
     }

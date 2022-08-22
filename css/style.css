@@ -1,7 +1,8 @@
 body {
   padding: 0;
   margin: 0px;
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif; }
 
 .primary-text {
   font-size: 0.75rem;
@@ -95,7 +96,6 @@ body {
 .front_card-text {
   top: 0px;
   bottom: 5px;
-  left: 1.16rem;
   color: white; }
   .front_card-text p {
     margin-bottom: 0.5rem; }
