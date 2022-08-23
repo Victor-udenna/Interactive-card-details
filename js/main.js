@@ -24,6 +24,8 @@ let ERROR_5 = document.querySelector('.error5');// confirm card btn.
 // Display
 let formDisplay = document.querySelector('.form_container');
 let thankyouDisplay = document.querySelector('.Thankyou_message');
+let Span = document.querySelectorAll('span');
+console.log(Span);
 // All card content
 // CARD NAME CODE
 const inputName = () => {
@@ -41,6 +43,7 @@ const inputName = () => {
 //
 // CARD NUMBER CODE
 const inputNumber = () => {
+    
     card_number_card.innerText = card_number_input.value;
     if (card_number_card.innerText = card_number_input.value) {
         card_number_card.innerText = card_number_input.value;
@@ -103,6 +106,7 @@ const chanegedisplay = () => {
         console.log("Nice");
         formDisplay.style.display = "none";
         thankyouDisplay.style.display = "flex";
+        
     } 
     
     else {

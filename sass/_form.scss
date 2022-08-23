@@ -107,7 +107,10 @@
     }
 }
 
-
+ label span{
+    color: $success;
+    font-size: $fs-1;
+}
 
 @media screen and (min-width: $breakpoint-tablet) {
 
