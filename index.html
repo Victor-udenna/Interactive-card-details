@@ -49,14 +49,14 @@
 
     <div class="input-container">
 <label for="card-number" class="label"><span class="num-assteric">* </span>CARD NUMBER</label>
-<input type="tel" id="card-number" class="card-holder" placeholder="e.g. 1234 5678 9123 0000" required maxlength="16">
+<input type="tel" id="card-number" class="card-holder" placeholder="e.g. 1234 5678 9123 0000" required maxlength="16" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
 <p class="Error_text error2a">can't  be blank</p>
     </div>
 
 <div class="sub-container">
 
 <div class="label-container">
-  <label for="date_label" class="label"><span class="exp-assteric">* </span>EXP. DATE (MM/YY)</label>
+  <label for="date_label" class="label"><span class="mth-assteric">* </span>EXP. DATE <span class="yr-assteric">*</span>(MM/YY)</label>
   <div class="date_container">
   <input type="tel" placeholder="MM" id="date_label" class="month" required maxlength="2">
   <input type="tel" placeholder="YY" id="" class="year" required maxlength="2">

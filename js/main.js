@@ -71,10 +71,12 @@ const InputMonth = () => {
         expMonth_card.innerText = expMonth_input.value;
         expMonth_input.style.borderColor = "#dedddf";
         ERROR_3.style.visibility = "hidden";
+        mthAsteric.style.color = "green";
     } else {
         expMonth_input.style.borderColor = "red";
         expMonth_card.innerText = "xx";
         ERROR_3.style.visibility = "visible";
+        mthAsteric.style.color = "red";
         
     }
 }
@@ -85,12 +87,12 @@ const InputYear = () => {
         expYear_card.innerText = expYear_input.value;
         expYear_input.style.borderColor = "#dedddf";
         ERROR_4.style.visibility = "hidden";
-        expAsteric.style.color = "green";
+        yrAsteric.style.color = "green";
     } else {
         expYear_input.style.borderColor = "red";
         expYear_card.innerText = "xx";
         ERROR_4.style.visibility = "visible";
-        expAsteric.style.color = "red";
+        yrAsteric.style.color = "red";
     }
 }
 // CVC NUMBER CODE
@@ -144,15 +146,9 @@ function printfunction() {
     
 } 
 
-
-
-
+// *****
 let nameAsteric = document.querySelector('.name-assteric');
 let numAsteric = document.querySelector('.num-assteric');
-let expAsteric = document.querySelector('.exp-assteric');
+let mthAsteric = document.querySelector('.mth-assteric');
+let yrAsteric = document.querySelector('.yr-assteric');
 let cvvAsteric = document.querySelector('.cvc-assteric');
-
-
-
-
-
