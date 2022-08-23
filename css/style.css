@@ -81,7 +81,7 @@ body { padding: 0; margin: 0px; font-size: 18px; }
 .date_container, .error-message-container { display: flex; flex-direction: row; justify-content: space-between; }
 .date_container :nth-child(1), .date_container :nth-child(2), .error-message-container :nth-child(1), .error-message-container :nth-child(2) { width: 50%; flex-grow: 2; margin-right: 0.25rem; }
 
-label span { color: #0f832e; font-size: 1rem; }
+label span { color: #a304ff; font-size: 1rem; }
 
 @media screen and (min-width: 768px) { .form_container { width: 50%; margin: 2.5rem auto auto auto; max-width: 500px; }
   .form_container .label { font-size: 0.75rem; }

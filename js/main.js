@@ -34,21 +34,24 @@ const inputName = () => {
         card_holder_card.innerText = card_holder_input.value;
         card_holder_input.style.borderColor = "#dedddf";
         ERROR_1.style.visibility = "hidden";
+        nameAsteric.style.color = "green";
     } else {
         card_holder_card.innerText = "XXXX  XXXXXXX";
         card_holder_input.style.borderColor = "red";
         ERROR_1.style.visibility = "visible";
+        nameAsteric.style.color = "red";
     }
 }
 //
 // CARD NUMBER CODE
 const inputNumber = () => {
-    
+
     card_number_card.innerText = card_number_input.value;
     if (card_number_card.innerText = card_number_input.value) {
         card_number_card.innerText = card_number_input.value;
         card_number_input.style.borderColor = "#dedddf";
         ERROR_2A.style.visibility = "hidden";
+        numAsteric.style.color = "green";
         // ERROR_2.style.visibility = "hidden";
     } 
      else  {
@@ -56,6 +59,7 @@ const inputNumber = () => {
         ERROR_2A.style.visibility = "visible";
         // ERROR_2.style.visibility = "hidden";
         card_number_input.style.borderColor = "red";
+        numAsteric.style.color = "red";
     }
 
 }
@@ -71,6 +75,7 @@ const InputMonth = () => {
         expMonth_input.style.borderColor = "red";
         expMonth_card.innerText = "xx";
         ERROR_3.style.visibility = "visible";
+        
     }
 }
 // EXP DATE (month) MOnTH
@@ -80,10 +85,12 @@ const InputYear = () => {
         expYear_card.innerText = expYear_input.value;
         expYear_input.style.borderColor = "#dedddf";
         ERROR_4.style.visibility = "hidden";
+        expAsteric.style.color = "green";
     } else {
         expYear_input.style.borderColor = "red";
         expYear_card.innerText = "xx";
         ERROR_4.style.visibility = "visible";
+        expAsteric.style.color = "red";
     }
 }
 // CVC NUMBER CODE
@@ -94,10 +101,13 @@ const Inputcvc = () => {
         cvc_card.innerText = cvc_input.value;
         cvc_input.style.borderColor = "#dedddf";
         ERROR_5.style.visibility = "hidden";
+        cvvAsteric.style.color = "green";
+       
     } else {
         cvc_input.style.borderColor = "red";
         cvc_card.innerText = "xxx";
         ERROR_5.style.visibility = "visible";
+        cvvAsteric.style.color = "red";
     }
 }
 
@@ -132,4 +142,17 @@ add_card.addEventListener('click', (event) => {
 
 function printfunction() {
     
-}  
+} 
+
+
+
+
+let nameAsteric = document.querySelector('.name-assteric');
+let numAsteric = document.querySelector('.num-assteric');
+let expAsteric = document.querySelector('.exp-assteric');
+let cvvAsteric = document.querySelector('.cvc-assteric');
+
+
+
+
+
