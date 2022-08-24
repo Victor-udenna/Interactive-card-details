@@ -61,7 +61,6 @@ body {
     bottom: 5px;
     padding-left: $ps;
     padding-right: $ps;
-    // left: 1.16rem;
     color: $white-color;
     p{
       margin-bottom: $ms;
@@ -89,7 +88,7 @@ body {
   
   .back_card-text{
     top: 35%;
-    left: 247px;
+    left: 243px;
   }
 
   // Tablet style
@@ -110,7 +109,7 @@ body {
     // Aligning text on card medium screen
     .back_card-text{
       top: 37%;
-      left: 280px;
+      left: 278px;
     }
 
     .front_card-text{
@@ -155,8 +154,8 @@ body {
     }
 
     .back_card-text{
-      top: 40%;
-      left: 330px;
+      top: 39%;
+      left: 327px;
     }
 
     .front_card-text{

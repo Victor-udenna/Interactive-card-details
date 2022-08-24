@@ -1,154 +1,167 @@
-const add_card = document.getElementById('add-card');
+const add_card = document.getElementById("add-card");
 // card btn
-const card_holder_input = document.querySelector('#card-holder');
-let card_holder_card = document.querySelector('.name');
+const card_holder_input = document.querySelector("#card-holder");
+let card_holder_card = document.querySelector(".name");
 // card number
-const card_number_input = document.querySelector('#card-number');
-let card_number_card = document.querySelector('.card-number');
+const card_number = document.querySelector("#card-number");
+let card_number_input = card_number;
+let card_number_card = document.querySelector(".card-number");
 // MM month code (Exp date)
-const expMonth_input = document.querySelector('.month');
-let expMonth_card = document.querySelector('.month-card');
+const expMonth_input = document.querySelector(".month");
+let expMonth_card = document.querySelector(".month-card");
 //  YY year code
-const expYear_input = document.querySelector('.year');
-let expYear_card = document.querySelector('.year-card');
+const expYear_input = document.querySelector(".year");
+let expYear_card = document.querySelector(".year-card");
 // CVC
-const cvc_input = document.querySelector('.cvc');
-let cvc_card = document.querySelector('.cvc-number');
+const cvc_input = document.querySelector(".cvc");
+let cvc_card = document.querySelector(".cvc-number");
 /////ERROR MESSAGES
-let ERROR_1 = document.querySelector('.error1');
+let ERROR_1 = document.querySelector(".error1");
 // let ERROR_2 = document.querySelector('.error2');
-let ERROR_2A = document.querySelector('.error2a');
-let ERROR_3 = document.querySelector('.error3');
-let ERROR_4 = document.querySelector('.error4');
-let ERROR_5 = document.querySelector('.error5');// confirm card btn.
+let ERROR_2A = document.querySelector(".error2a");
+let ERROR_3 = document.querySelector(".error3");
+let ERROR_4 = document.querySelector(".error4");
+let ERROR_5 = document.querySelector(".error5"); // confirm card btn.
 // Display
-let formDisplay = document.querySelector('.form_container');
-let thankyouDisplay = document.querySelector('.Thankyou_message');
-let Span = document.querySelectorAll('span');
-console.log(Span);
+let formDisplay = document.querySelector(".form_container");
+let thankyouDisplay = document.querySelector(".Thankyou_message");
+let Span = document.querySelectorAll("span");
 // All card content
+
+// card_number.onkeydown = function () {
+//     if (card_number.value.length > 0) {
+//         if (card_number.value.length / 4 == 1) {
+//             card_number.value += " ";
+//             if (card_number.value.length % 4 == 0) {
+//                 card_number.value += " ";
+//             }
+//         }
+//     }
+// }
+// card_number.oninput = () => {
+//     if (card_number.valeu.length )
+// }
+
+
+
 // CARD NAME CODE
 const inputName = () => {
-        card_holder_card.innerText = card_holder_input.value;
-    if (card_holder_card.innerText = card_holder_input.value) {
-        card_holder_card.innerText = card_holder_input.value;
-        card_holder_input.style.borderColor = "#dedddf";
-        ERROR_1.style.visibility = "hidden";
-        nameAsteric.style.color = "green";
-    } else {
-        card_holder_card.innerText = "XXXX  XXXXXXX";
-        card_holder_input.style.borderColor = "red";
-        ERROR_1.style.visibility = "visible";
-        nameAsteric.style.color = "red";
-    }
-}
+  card_holder_card.innerText = card_holder_input.value;
+  if ((card_holder_card.innerText = card_holder_input.value)) {
+    card_holder_card.innerText = card_holder_input.value;
+    card_holder_input.style.borderColor = "#dedddf";
+    ERROR_1.style.visibility = "hidden";
+    nameAsteric.style.color = "green";
+  } else {
+    card_holder_card.innerText = "XXXX  XXXXXXX";
+    card_holder_input.style.borderColor = "red";
+    ERROR_1.style.visibility = "visible";
+    nameAsteric.style.color = "red";
+  }
+};
 //
+
 // CARD NUMBER CODE
+
 const inputNumber = () => {
-
+  card_number_card.innerText = card_number_input.value;
+  if ((card_number_card.innerText = card_number_input.value)) {
     card_number_card.innerText = card_number_input.value;
-    if (card_number_card.innerText = card_number_input.value) {
-        card_number_card.innerText = card_number_input.value;
-        card_number_input.style.borderColor = "#dedddf";
-        ERROR_2A.style.visibility = "hidden";
-        numAsteric.style.color = "green";
-        // ERROR_2.style.visibility = "hidden";
-    } 
-     else  {
-        card_number_card.innerText = "xxxx xxxx xxxx xxxx";
-        ERROR_2A.style.visibility = "visible";
-        // ERROR_2.style.visibility = "hidden";
-        card_number_input.style.borderColor = "red";
-        numAsteric.style.color = "red";
-    }
-
-}
+    card_number_input.style.borderColor = "#dedddf";
+    ERROR_2A.style.visibility = "hidden";
+    numAsteric.style.color = "green";
+    // ERROR_2.style.visibility = "hidden";
+  } else {
+    card_number_card.innerText = "xxxx xxxx xxxx xxxx";
+    ERROR_2A.style.visibility = "visible";
+    // ERROR_2.style.visibility = "hidden";
+    card_number_input.style.borderColor = "red";
+    numAsteric.style.color = "red";
+  }
+};
 //
 // EXP DATE (month) MOnTH
 const InputMonth = () => {
+  expMonth_card.innerText = expMonth_input.value;
+  if ((expMonth_card.innerText = expMonth_input.value)) {
     expMonth_card.innerText = expMonth_input.value;
-    if (expMonth_card.innerText = expMonth_input.value) {
-        expMonth_card.innerText = expMonth_input.value;
-        expMonth_input.style.borderColor = "#dedddf";
-        ERROR_3.style.visibility = "hidden";
-        mthAsteric.style.color = "green";
-    } else {
-        expMonth_input.style.borderColor = "red";
-        expMonth_card.innerText = "xx";
-        ERROR_3.style.visibility = "visible";
-        mthAsteric.style.color = "red";
-        
-    }
-}
+    expMonth_input.style.borderColor = "#dedddf";
+    ERROR_3.style.visibility = "hidden";
+    mthAsteric.style.color = "green";
+  } else {
+    expMonth_input.style.borderColor = "red";
+    expMonth_card.innerText = "xx";
+    ERROR_3.style.visibility = "visible";
+    mthAsteric.style.color = "red";
+  }
+};
 // EXP DATE (month) MOnTH
 const InputYear = () => {
-        expYear_card.innerText = expYear_input.value;
-    if (expYear_input.innerText = expYear_input.value) {
-        expYear_card.innerText = expYear_input.value;
-        expYear_input.style.borderColor = "#dedddf";
-        ERROR_4.style.visibility = "hidden";
-        yrAsteric.style.color = "green";
-    } else {
-        expYear_input.style.borderColor = "red";
-        expYear_card.innerText = "xx";
-        ERROR_4.style.visibility = "visible";
-        yrAsteric.style.color = "red";
-    }
-}
+  expYear_card.innerText = expYear_input.value;
+  if ((expYear_input.innerText = expYear_input.value)) {
+    expYear_card.innerText = expYear_input.value;
+    expYear_input.style.borderColor = "#dedddf";
+    ERROR_4.style.visibility = "hidden";
+    yrAsteric.style.color = "green";
+  } else {
+    expYear_input.style.borderColor = "red";
+    expYear_card.innerText = "xx";
+    ERROR_4.style.visibility = "visible";
+    yrAsteric.style.color = "red";
+  }
+};
 // CVC NUMBER CODE
 
 const Inputcvc = () => {
+  cvc_card.innerText = cvc_input.value;
+  if ((cvc_card.innerText = cvc_input.value)) {
     cvc_card.innerText = cvc_input.value;
-    if (cvc_card.innerText = cvc_input.value) {
-        cvc_card.innerText = cvc_input.value;
-        cvc_input.style.borderColor = "#dedddf";
-        ERROR_5.style.visibility = "hidden";
-        cvvAsteric.style.color = "green";
-       
-    } else {
-        cvc_input.style.borderColor = "red";
-        cvc_card.innerText = "xxx";
-        ERROR_5.style.visibility = "visible";
-        cvvAsteric.style.color = "red";
-    }
-}
+    cvc_input.style.borderColor = "#dedddf";
+    ERROR_5.style.visibility = "hidden";
+    cvvAsteric.style.color = "green";
+  } else {
+    cvc_input.style.borderColor = "red";
+    cvc_card.innerText = "xxx";
+    ERROR_5.style.visibility = "visible";
+    cvvAsteric.style.color = "red";
+  }
+};
 
 const chanegedisplay = () => {
-    if (cvc_card.innerText == cvc_input.value && expYear_card.innerText == expYear_input.value && expMonth_card.innerText == expMonth_input.value && card_number_card.innerText == card_number_input.value && card_holder_card.innerText == card_holder_input.value) {
-        console.log("Nice");
-        formDisplay.style.display = "none";
-        thankyouDisplay.style.display = "flex";
-        
-    } 
+  if (
+    cvc_card.innerText == cvc_input.value &&
+    expYear_card.innerText == expYear_input.value &&
+    expMonth_card.innerText == expMonth_input.value &&
+    card_number_card.innerText == card_number_input.value &&
+    card_holder_card.innerText == card_holder_input.value
+  ) {
+    console.log("Nice");
+    formDisplay.style.display = "none";
+    thankyouDisplay.style.display = "flex";
+  } else {
+    console.log("opps");
+    formDisplay.style.display = "block";
+    thankyouDisplay.style.display = "none";
+  }
+};
+
+add_card.addEventListener("click", (event) => {
+  event.preventDefault();
+  console.log("you clicked it");
+  inputName();
+  inputNumber();
+  InputMonth();
+  InputYear();
+  Inputcvc();
+  chanegedisplay();
     
-    else {
-        console.log('opps');
-        formDisplay.style.display = "block";
-        thankyouDisplay.style.display = "none";
-    }
+});
 
-}
-
-
-
-add_card.addEventListener('click', (event) => {
-    event.preventDefault();
-    console.log("you clicked it");
-    inputName();
-    inputNumber();
-    InputMonth();
-    InputYear();
-    Inputcvc();
-    chanegedisplay();
-})
-
-function printfunction() {
-    
-} 
+function printfunction() {}
 
 // *****
-let nameAsteric = document.querySelector('.name-assteric');
-let numAsteric = document.querySelector('.num-assteric');
-let mthAsteric = document.querySelector('.mth-assteric');
-let yrAsteric = document.querySelector('.yr-assteric');
-let cvvAsteric = document.querySelector('.cvc-assteric');
+let nameAsteric = document.querySelector(".name-assteric");
+let numAsteric = document.querySelector(".num-assteric");
+let mthAsteric = document.querySelector(".mth-assteric");
+let yrAsteric = document.querySelector(".yr-assteric");
+let cvvAsteric = document.querySelector(".cvc-assteric");
