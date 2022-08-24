@@ -147,8 +147,9 @@ reload_page.addEventListener('click', () => {
 })
 
 
-add_card.addEventListener("click", (event) => {
-  event.preventDefault();
+add_card.addEventListener("click", () => {
+  // event
+  // event.preventDefault();
   console.log("you clicked it");
   inputName();
   inputNumber();
