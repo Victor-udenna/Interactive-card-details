@@ -3,7 +3,8 @@ const add_card = document.getElementById("add-card");
 const card_holder_input = document.querySelector("#card-holder");
 let card_holder_card = document.querySelector(".name");
 // card number
-const card_number = document.querySelector("#card-number");
+let card_number_input = document.querySelector("#card-number");
+// let card_number_input = card_number;
 let card_number_card = document.querySelector(".card-number");
 // MM month code (Exp date)
 const expMonth_input = document.querySelector(".month");
@@ -27,16 +28,14 @@ let thankyouDisplay = document.querySelector(".Thankyou_message");
 let Span = document.querySelectorAll("span");
 // All card content
 
-card_number.oninput = function () {
-    if (card_number.value.length > 0) {
+// card_number_input.oninput = function () {
+//     if (card_number_input.value.length > 0) {
 
-        if (card_number.value.length % 4 == 0) {
-            card_number.value += "    ";
-        }
-    }
-}
-
-let card_number_input = card_number;
+//         if (card_number_input.value.length % 4 == 0) {
+//             card_number_input.value += "    ";
+//         }
+//     }
+// }
 
 // CARD NAME CODE
 const inputName = () => {
