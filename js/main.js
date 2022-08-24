@@ -4,7 +4,6 @@ const card_holder_input = document.querySelector("#card-holder");
 let card_holder_card = document.querySelector(".name");
 // card number
 const card_number = document.querySelector("#card-number");
-let card_number_input = card_number;
 let card_number_card = document.querySelector(".card-number");
 // MM month code (Exp date)
 const expMonth_input = document.querySelector(".month");
@@ -28,21 +27,16 @@ let thankyouDisplay = document.querySelector(".Thankyou_message");
 let Span = document.querySelectorAll("span");
 // All card content
 
-// card_number.onkeydown = function () {
-//     if (card_number.value.length > 0) {
-//         if (card_number.value.length / 4 == 1) {
-//             card_number.value += " ";
-//             if (card_number.value.length % 4 == 0) {
-//                 card_number.value += " ";
-//             }
-//         }
-//     }
-// }
-// card_number.oninput = () => {
-//     if (card_number.valeu.length )
-// }
+card_number.oninput = function () {
+    if (card_number.value.length > 0) {
 
+        if (card_number.value.length % 4 == 0) {
+            card_number.value += "    ";
+        }
+    }
+}
 
+let card_number_input = card_number;
 
 // CARD NAME CODE
 const inputName = () => {
@@ -53,14 +47,13 @@ const inputName = () => {
     ERROR_1.style.visibility = "hidden";
     nameAsteric.style.color = "green";
   } else {
-    card_holder_card.innerText = "XXXX  XXXXXXX";
+    card_holder_card.innerHTML = '<span>xxxx&nbsp;  xxxxxx</span>';
     card_holder_input.style.borderColor = "red";
     ERROR_1.style.visibility = "visible";
     nameAsteric.style.color = "red";
   }
 };
 //
-
 // CARD NUMBER CODE
 
 const inputNumber = () => {
