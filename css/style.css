@@ -14,6 +14,10 @@ button:focus { outline: none; }
 @media (min-width: 1240px) { .main { display: flex; flex-direction: row; height: 100vh; align-items: center; justify-content: space-between; overflow: hidden; }
   .main .form_container { justify-self: start; }
   .name, .primary-text { font-size: 1rem; } }
+body.success .form_container { display: none; }
+
+body.success .Thankyou_message { display: flex; }
+
 body { padding: 0; margin: 0px; font-size: 18px; }
 
 .header { background: url(../images/bg-main-mobile.png) no-repeat center center/cover; width: 100%; height: 25vh; position: relative; display: flex; flex-direction: column; justify-content: center; padding-top: 3.5rem; margin-bottom: 1.5rem; }

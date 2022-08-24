@@ -26,6 +26,8 @@ let ERROR_5 = document.querySelector(".error5"); // confirm card btn.
 let formDisplay = document.querySelector(".form_container");
 let thankyouDisplay = document.querySelector(".Thankyou_message");
 let Span = document.querySelectorAll("span");
+
+
 // All card content
 
 // card_number_input.oninput = function () {
@@ -127,15 +129,28 @@ const chanegedisplay = () => {
     card_number_card.innerText == card_number_input.value &&
     card_holder_card.innerText == card_holder_input.value
   ) {
-    console.log("Nice");
-    formDisplay.style.display = "none";
-    thankyouDisplay.style.display = "flex";
-  } else {
-    console.log("opps");
-    formDisplay.style.display = "block";
-    thankyouDisplay.style.display = "none";
-  }
+      document.body.classList.add('success');
+    // console.log("Nice");
+    // formDisplay.style.display = "none";
+    // thankyouDisplay.style.display = "flex";
+    }
+    
+  else {
+    document.body.classList.remove('success');
+    }
+//  else {
+//     console.log("opps");
+//     formDisplay.style.display = "block";
+//     thankyouDisplay.style.display = "none";
+//   }
 };
+
+let reload_page = document.querySelector('.reload_btn');
+reload_page.addEventListener('click', () => {
+    window.location.reload();
+    console.log('reload page')
+})
+
 
 add_card.addEventListener("click", (event) => {
   event.preventDefault();

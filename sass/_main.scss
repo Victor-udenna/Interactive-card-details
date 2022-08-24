@@ -71,3 +71,12 @@ button:focus{
     }
 
   }
+
+
+  body.success .form_container{
+    display: none
+  } 
+
+  body.success .Thankyou_message{
+    display: flex;
+  }
