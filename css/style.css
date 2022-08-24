@@ -6,7 +6,7 @@ body { padding: 0; margin: 0px; font-size: 18px; font-family: "Space Grotesk", s
 
 .main { display: flex; flex-direction: column; height: 100vh; }
 
-.primary_btn { background-color: #21092f; padding: 0.75rem 0.5rem; border-radius: 6px; border: none; margin: 1.5rem 0; color: white; background-color: #21092f; width: 300px; cursor: pointer; }
+.primary_btn { background-color: #21092f; padding: 1.24rem; border-radius: 6px; border: none; margin: 1.5rem 0; color: white; background-color: #21092f; width: 300px; cursor: pointer; }
 
 button:focus { outline: none; }
 
