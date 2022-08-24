@@ -130,19 +130,11 @@ const chanegedisplay = () => {
     card_holder_card.innerText == card_holder_input.value
   ) {
       document.body.classList.add('success');
-    // console.log("Nice");
-    // formDisplay.style.display = "none";
-    // thankyouDisplay.style.display = "flex";
     }
     
   else {
     document.body.classList.remove('success');
     }
-//  else {
-//     console.log("opps");
-//     formDisplay.style.display = "block";
-//     thankyouDisplay.style.display = "none";
-//   }
 };
 
 let reload_page = document.querySelector('.reload_btn');
