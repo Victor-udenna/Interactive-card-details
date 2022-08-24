@@ -123,11 +123,11 @@ const Inputcvc = () => {
 
 const chanegedisplay = () => {
   if (
-    cvc_card.innerText == cvc_input.value &&
-    expYear_card.innerText == expYear_input.value &&
-    expMonth_card.innerText == expMonth_input.value &&
-    card_number_card.innerText == card_number_input.value &&
-    card_holder_card.innerText == card_holder_input.value
+    cvc_card.innerText === cvc_input.value &&
+    expYear_card.innerText === expYear_input.value &&
+    expMonth_card.innerText === expMonth_input.value &&
+    card_number_card.innerText === card_number_input.value &&
+    card_holder_card.innerText === card_holder_input.value
   ) {
       document.body.classList.add('success');
     }
