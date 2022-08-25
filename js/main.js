@@ -128,9 +128,7 @@ const chanegedisplay = () => {
     expMonth_card.innerText === expMonth_input.value &&
     expYear_card.innerText === expYear_input.value &&
     cvc_card.innerText === cvc_input.value
-
-  
-   
+     
   ) {
       document.body.classList.add('success');
     }
@@ -139,6 +137,22 @@ const chanegedisplay = () => {
     document.body.classList.remove('success');
     }
 };
+
+let userDetails = [];
+
+const saveValue = () => {
+  let content = {
+    name: card_holder_input.value,
+    cardNumber: card_number_input.value,
+    expMonth: expMonth_input.value,
+    expYear: expYear_input.value,
+    cvcNumber: cvc_input.value
+    
+  }
+
+  userDetails.push(content);
+  console.log('added', {userDetails})
+}
 
 let reload_page = document.querySelector('.reload_btn');
 reload_page.addEventListener('click', () => {
@@ -157,6 +171,7 @@ add_card.addEventListener("click", () => {
   InputYear();
   Inputcvc();
   chanegedisplay();
+  saveValue();
     
 });
 
