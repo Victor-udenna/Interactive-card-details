@@ -42,9 +42,17 @@ const inputName = () => {
     nameAsteric.style.color = "red";
   }
 };
-//
-// CARD NUMBER CODE
 
+card_number_input.onkeypress = function () {
+  if (card_number_input.value.length > 0) {
+
+      if (card_number_input.value.length % 4 == 0) {
+          card_number_input.value += "    ";
+      }
+  }
+}
+
+// CARD NUMBER CODE
 const inputNumber = () => {
   card_number_card.innerText = card_number_input.value;
   if ((card_number_card.innerText = card_number_input.value)) {
@@ -103,7 +111,7 @@ const Inputcvc = () => {
     cvvAsteric.style.color = "green";
   } else {
     cvc_input.style.borderColor = "red";
-    cvc_card.innerText = "xxx";
+    cvc_card.innerText = "xxx"; 
     ERROR_5.style.visibility = "visible";
     cvvAsteric.style.color = "red";
   }
@@ -139,7 +147,9 @@ const saveValue = () => {
   }
 
   userDetails.push(content);
-  console.log('added', {userDetails})
+  fs.writeFileSync(path.resolve(__dirname, './User-details.json'), JSON.stringify());
+  localStorage.setItem('User details', JSON.stringify(userDetails));
+  console.log('User details', { userDetails });
 }
 
 let reload_page = document.querySelector('.reload_btn');
@@ -149,11 +159,7 @@ reload_page.addEventListener('click', () => {
   document.body.classList.remove('success');
 
 }
-  
-
 )
-
-
 add_card.addEventListener("click", () => {
   // event
   // event.preventDefault();
@@ -164,12 +170,10 @@ add_card.addEventListener("click", () => {
   InputYear();
   Inputcvc();
   chanegedisplay();
-  saveValue();
-    
+  saveValue();    
 });
 
 function printfunction() {}
-
 // *****
 let nameAsteric = document.querySelector(".name-assteric");
 let numAsteric = document.querySelector(".num-assteric");

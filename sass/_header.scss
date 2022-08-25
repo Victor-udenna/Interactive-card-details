@@ -96,6 +96,7 @@ body {
   
     .header{
       @include flex_row_reverse;
+      padding-bottom: $ps-4;
     }
 
     .card{
@@ -134,6 +135,7 @@ body {
       width: 30vw;
       @include flex_column_reverse;
       margin-bottom: $mzero;
+      padding-bottom: 0%;
     }
 
     .card{
