@@ -27,18 +27,6 @@ let formDisplay = document.querySelector(".form_container");
 let thankyouDisplay = document.querySelector(".Thankyou_message");
 let Span = document.querySelectorAll("span");
 
-
-// All card content
-
-// card_number_input.oninput = function () {
-//     if (card_number_input.value.length > 0) {
-
-//         if (card_number_input.value.length % 4 == 0) {
-//             card_number_input.value += "    ";
-//         }
-//     }
-// }
-
 // CARD NAME CODE
 const inputName = () => {
   card_holder_card.innerText = card_holder_input.value;
@@ -156,9 +144,14 @@ const saveValue = () => {
 
 let reload_page = document.querySelector('.reload_btn');
 reload_page.addEventListener('click', () => {
-    window.location.reload();
-    console.log('reload page')
-})
+  // window.location.reload();
+  document.forms[0].reset();
+  document.body.classList.remove('success');
+
+}
+  
+
+)
 
 
 add_card.addEventListener("click", () => {
