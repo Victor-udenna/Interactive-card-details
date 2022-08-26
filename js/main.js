@@ -3,8 +3,8 @@ const add_card = document.getElementById("add-card");
 const card_holder_input = document.querySelector("#card-holder");
 let card_holder_card = document.querySelector(".name");
 // card number
-let card_number_input = document.querySelector("#card-number");
-// let card_number_input = card_number;
+let card_number = document.querySelector("#card-number");
+let card_number_input = card_number;
 let card_number_card = document.querySelector(".card-number");
 // MM month code (Exp date)
 const expMonth_input = document.querySelector(".month");
@@ -26,7 +26,6 @@ let ERROR_5 = document.querySelector(".error5"); // confirm card btn.
 let formDisplay = document.querySelector(".form_container");
 let thankyouDisplay = document.querySelector(".Thankyou_message");
 let Span = document.querySelectorAll("span");
-
 // CARD NAME CODE
 const inputName = () => {
   card_holder_card.innerText = card_holder_input.value;
@@ -43,11 +42,10 @@ const inputName = () => {
   }
 };
 
-card_number_input.onkeypress = function () {
-  if (card_number_input.value.length > 0) {
-
-      if (card_number_input.value.length % 4 == 0) {
-          card_number_input.value += "    ";
+card_number.onkeypress = function () {
+  if (card_number.value.length > 0) {
+      if (card_number.value.length % 4 == 0) {
+          card_number.value += "    ";
       }
   }
 }
@@ -154,8 +152,8 @@ const saveValue = () => {
 
 let reload_page = document.querySelector('.reload_btn');
 reload_page.addEventListener('click', () => {
-  // window.location.reload();
-  document.forms[0].reset();
+  window.location.reload();
+  // document.forms[0].reset();
   document.body.classList.remove('success');
 
 }
