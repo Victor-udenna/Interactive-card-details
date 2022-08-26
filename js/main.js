@@ -35,7 +35,7 @@ const inputName = () => {
     ERROR_1.style.visibility = "hidden";
     nameAsteric.style.color = "green";
   } else {
-    card_holder_card.innerHTML = '<span>xxxx&nbsp;  xxxxxx</span>';
+    card_holder_card.innerHTML = "<span>xxxx&nbsp;  xxxxxx</span>";
     card_holder_input.style.borderColor = "red";
     ERROR_1.style.visibility = "visible";
     nameAsteric.style.color = "red";
@@ -44,11 +44,11 @@ const inputName = () => {
 
 card_number.onkeypress = function () {
   if (card_number.value.length > 0) {
-      if (card_number.value.length % 4 == 0) {
-          card_number.value += "    ";
-      }
+    if (card_number.value.length % 4 == 0) {
+      card_number.value += "    ";
+    }
   }
-}
+};
 
 // CARD NUMBER CODE
 const inputNumber = () => {
@@ -58,11 +58,9 @@ const inputNumber = () => {
     card_number_input.style.borderColor = "#dedddf";
     ERROR_2A.style.visibility = "hidden";
     numAsteric.style.color = "green";
-    // ERROR_2.style.visibility = "hidden";
   } else {
     card_number_card.innerText = "xxxx xxxx xxxx xxxx";
     ERROR_2A.style.visibility = "visible";
-    // ERROR_2.style.visibility = "hidden";
     card_number_input.style.borderColor = "red";
     numAsteric.style.color = "red";
   }
@@ -109,7 +107,7 @@ const Inputcvc = () => {
     cvvAsteric.style.color = "green";
   } else {
     cvc_input.style.borderColor = "red";
-    cvc_card.innerText = "xxx"; 
+    cvc_card.innerText = "xxx";
     ERROR_5.style.visibility = "visible";
     cvvAsteric.style.color = "red";
   }
@@ -118,46 +116,43 @@ const Inputcvc = () => {
 const chanegedisplay = () => {
   if (
     card_holder_card.innerText === card_holder_input.value &&
-    card_number_card.innerText === card_number_input.value &&
     expMonth_card.innerText === expMonth_input.value &&
     expYear_card.innerText === expYear_input.value &&
     cvc_card.innerText === cvc_input.value
-     
   ) {
-      document.body.classList.add('success');
+    let numCharacter;
+    numCharacter = card_number_input.value.substring(0, 4);
+    if (card_number_card.innerText.includes(numCharacter)) {
+      document.body.classList.add("success");
     }
-    
-  else {
-    document.body.classList.remove('success');
-    }
+  } else {
+    document.body.classList.remove("success");
+  }
 };
 
 let userDetails = [];
 
 const saveValue = () => {
+  // let xhr = new XMLHttpRequest();
+
   let content = {
     name: card_holder_input.value,
     cardNumber: card_number_input.value,
     expMonth: expMonth_input.value,
     expYear: expYear_input.value,
-    cvcNumber: cvc_input.value
-    
-  }
-
+    cvcNumber: cvc_input.value,
+  };
   userDetails.push(content);
-  fs.writeFileSync(path.resolve(__dirname, './User-details.json'), JSON.stringify());
-  localStorage.setItem('User details', JSON.stringify(userDetails));
-  console.log('User details', { userDetails });
-}
+  // localStorage.setItem('User details', JSON.stringify(userDetails));
+  console.log("User details", { userDetails });
+};
 
-let reload_page = document.querySelector('.reload_btn');
-reload_page.addEventListener('click', () => {
+let reload_page = document.querySelector(".reload_btn");
+reload_page.addEventListener("click", () => {
   window.location.reload();
   // document.forms[0].reset();
-  document.body.classList.remove('success');
-
-}
-)
+  document.body.classList.remove("success");
+});
 add_card.addEventListener("click", () => {
   // event
   // event.preventDefault();
@@ -168,7 +163,7 @@ add_card.addEventListener("click", () => {
   InputYear();
   Inputcvc();
   chanegedisplay();
-  saveValue();    
+  saveValue();
 });
 
 function printfunction() {}
