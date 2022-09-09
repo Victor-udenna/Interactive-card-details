@@ -113,11 +113,6 @@ const Inputcvc = () => {
   }
 };
 
-
-// let numCharacter1;
-// numCharacter1 = card_number_card.innerText.substring(0, 4);
-
-
 const changedisplay = () => {
   if (
     card_holder_card.innerText === card_holder_input.value &&
@@ -136,20 +131,8 @@ const changedisplay = () => {
 
 
 
-let userDetails = [];
 
-const saveValue = () => {
-  let content = {
-    name: card_holder_input.value,
-    cardNumber: card_number_input.value,
-    expMonth: expMonth_input.value,
-    expYear: expYear_input.value,
-    cvcNumber: cvc_input.value,
-  };
-  userDetails.push(content);
-  localStorage.setItem('User details', JSON.stringify(userDetails));
-  console.log("User details", { userDetails });
-};
+
 
 let reload_page = document.querySelector(".reload_btn");
 reload_page.addEventListener("click", () => {
@@ -178,3 +161,19 @@ let numAsteric = document.querySelector(".num-assteric");
 let mthAsteric = document.querySelector(".mth-assteric");
 let yrAsteric = document.querySelector(".yr-assteric");
 let cvvAsteric = document.querySelector(".cvc-assteric");
+
+let userDetails = [];
+const saveValue = () => {
+  let content = {
+    name: card_holder_input.value,
+    cardNumber: card_number_input.value,
+    expMonth: expMonth_input.value,
+    expYear: expYear_input.value,
+    cvcNumber: cvc_input.value,
+  };
+  userDetails.push(content);;
+  localStorage.setItem('User details', JSON.stringify(userDetails));
+  console.log("User details", { userDetails });
+};
+
+
